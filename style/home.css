@@ -1,0 +1,251 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HEDAER  */
+header {
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #1b1b1b79;
+}
+header i {
+  color: white;
+  font-size: 40pt;
+  cursor: pointer;
+}
+header a + a {
+  margin: 30px;
+}
+header a {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+/* HEDAER  */
+/* HOME */
+.home {
+  background-image: url("../img/snrsbk.jpg");
+  background-size: cover;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+}
+.home .text-group {
+  margin-left: 12%;
+}
+.home .text-group .principal-text {
+  color: #1b1b1b;
+  font-size: 55pt;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.home .text-group .learn-more {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16pt;
+  width: 170px;
+  padding: 20px;
+  background-color: #1b1b1b;
+}
+
+/* HOME */
+/* SLIDE HOME */
+.slide-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+  height: 300px;
+  width: 95vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-top: -60px;
+  overflow-x: hidden;
+}
+.slide-home .slide-single {
+  width: 550px;
+  display: grid;
+  grid-template-areas: "f fs" "f ss";
+}
+.slide-home .slide-single img {
+  width: 250px;
+  grid-area: f;
+  margin-right: 25px;
+}
+.slide-home .slide-description {
+  grid-area: fs;
+  font-weight: 600;
+  font-size: 20pt;
+  color: #1b1b1b;
+  align-self: center;
+}
+.slide-home .slide-readmore {
+  grid-area: ss;
+  text-decoration: none;
+  color: #1b1b1b83;
+  align-self: center;
+}
+
+/* SLIDE HOME */
+/* EXPLORE NOW */
+.explore-now {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #1b1b1b;
+  padding: 20px 20px;
+}
+.explore-now .text-group {
+  width: 45%;
+  min-width: 400px;
+}
+.explore-now .explore-now-title {
+  font-size: 40pt;
+  font-weight: 700;
+}
+.explore-now .explore-now-text {
+  font-size: 13pt;
+}
+.explore-now button {
+  border: none;
+  font-size: 20pt;
+  padding: 15px;
+  margin-top: 20px;
+  color: white;
+  background-color: #1b1b1b;
+  border: 2px solid #1b1b1b;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.explore-now button:hover {
+  color: #1b1b1b;
+  background-color: white;
+  border: 2px solid #1b1b1b;
+}
+.explore-now img {
+  width: 50%;
+}
+
+/* EXPLORE NOW */
+/* COUNTRIES */
+.countries {
+  display: flex;
+  flex-direction: column;
+}
+.countries .message-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+.countries .message-container .message {
+  display: flex;
+  flex-direction: row;
+  width: 3200px;
+  overflow: hidden;
+  animation-name: slideText;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.countries .message-container .message p {
+  font-size: 40pt;
+  color: #6aa18859;
+  font-weight: 700;
+  margin-left: 40px;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+.countries .country-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.countries .country-single {
+  position: relative;
+  width: 24%;
+  min-width: 300px;
+  height: 25vw;
+  border-radius: 10px;
+  margin: 5px 5px;
+  overflow: hidden;
+}
+.countries .country-single a {
+  text-decoration: none;
+  text-indent: 20px;
+  object-position: bottom;
+  background-color: rgba(255, 255, 255, 0.212);
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-size: 20pt;
+  left: 40%;
+  transition: 0.5s;
+}
+.countries .country-single a:hover {
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.288);
+}
+.countries .country-single img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+/* COUNTRIES */
+/*MORE INFO*/
+.more-info {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.more-info .info-single {
+  width: 30%;
+  min-width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  margin: 5px 5px;
+}
+.more-info img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*MORE INFO*/
+@keyframes slideText {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -1800px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
