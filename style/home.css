@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  z-index: 0;
 }
 
 body {
@@ -13,7 +12,7 @@ body {
 
 /* HEDAER  */
 header {
-  z-index: 1;
+  transition: 0.5s;
   height: 80px;
   width: 100vw;
   position: fixed;
@@ -37,6 +36,16 @@ header a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 12pt;
+}
+
+header.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header.hide {
+  opacity: 0;
+  transform: translateY(-50px);
 }
 
 /* HEDAER  */
@@ -151,6 +160,7 @@ header a {
 /* EXPLORE NOW */
 /* COUNTRIES */
 .countries {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -194,7 +204,7 @@ header a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .countries .country-single:hover {
-  transform: scale(1.06);
+  transform: translateY(-10px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .countries .country-single a {
@@ -230,6 +240,7 @@ header a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 20px;
 }
 .more-info .info-single {
   width: 30%;
@@ -256,6 +267,11 @@ header a {
 }
 
 /*MORE INFO*/
+.explore-dream {
+  height: 100vh;
+  background-image: url(../img/jipe.jpg);
+}
+
 @keyframes slideText {
   0% {
     margin-left: 0;
