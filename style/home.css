@@ -207,6 +207,10 @@ header.hide {
   transform: translateY(-10px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+.countries .country-single:hover a {
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.288);
+}
 .countries .country-single a {
   text-decoration: none;
   text-indent: 20px;
@@ -221,10 +225,6 @@ header.hide {
   left: 40%;
   transition: 0.5s;
 }
-.countries .country-single a:hover {
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.288);
-}
 .countries .country-single img {
   height: 100%;
   width: 100%;
@@ -238,8 +238,9 @@ header.hide {
 .more-info {
   margin-top: 100px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 20px;
 }
 .more-info .info-single {
@@ -248,7 +249,7 @@ header.hide {
   height: auto;
   border-radius: 10px;
   overflow: hidden;
-  margin: 5px 5px;
+  margin: 5px 1%;
 }
 .more-info img {
   height: 200px;
@@ -267,9 +268,70 @@ header.hide {
 }
 
 /*MORE INFO*/
+.view-blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #bbdace;
+  width: 95%;
+  min-height: 200px;
+  margin: 50px auto;
+}
+.view-blog .text {
+  font-size: 25pt;
+  font-weight: 400;
+  text-align: center;
+}
+.view-blog .link {
+  font-size: 14pt;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.view-blog .link hr {
+  transition: 0.5s;
+  border: none;
+  border-top: 1px black solid;
+  text-align: left;
+  width: 100%;
+}
+.view-blog .link:hover hr {
+  width: 0%;
+}
+
 .explore-dream {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
   height: 100vh;
   background-image: url(../img/jipe.jpg);
+  background-size: cover;
+}
+.explore-dream p {
+  margin-top: -10%;
+  font-weight: 600;
+  font-size: 50pt;
+  align-self: center;
+}
+.explore-dream button {
+  border: none;
+  font-size: 20pt;
+  padding: 15px;
+  height: 60px;
+  margin-top: 20px;
+  color: white;
+  background-color: #1b1b1b;
+  border: 2px solid #1b1b1b;
+  transition: 0.5s;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 10%;
+}
+.explore-dream button:hover {
+  color: #1b1b1b;
+  background: none;
+  border: 2px solid #1b1b1b;
 }
 
 @keyframes slideText {

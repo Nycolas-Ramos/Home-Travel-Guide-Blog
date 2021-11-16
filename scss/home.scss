@@ -216,6 +216,10 @@ header.hide{
         &:hover {
             transform: translateY(-10px);
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            a{
+                left: 0;
+                background-color: rgba(255, 255, 255, 0.288);
+            }
         }
 
         a {
@@ -231,10 +235,6 @@ header.hide{
             font-size: 20pt;
             left: 40%;
             transition: 0.5s;
-            &:hover {
-                left: 0;
-                background-color: rgba(255, 255, 255, 0.288);
-            }
         }
         img {
             height: 100%;
@@ -251,16 +251,18 @@ header.hide{
 .more-info {
     margin-top: 100px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
+
     .info-single {
         width: 30%;
         min-width: 300px;
         height: auto;
         border-radius: 10px;
         overflow: hidden;
-        margin: 5px 5px;
+        margin: 5px 1%;
     }
     img {
         height: 200px;
@@ -280,10 +282,81 @@ header.hide{
 }
 /*MORE INFO*/
 
+// VIEW BLOG
+.view-blog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(187, 218, 206);
+    width: 95%;
+    min-height:200px ;
+    margin: 50px auto;
+    .text{
+        font-size: 25pt;
+        font-weight: 400;
+        text-align: center;
+    }
+    .link {
+        font-size:14pt;
+        color: black;
+        text-decoration: none;       
+        transition: .5s;
+
+        hr{
+            transition: .5s;
+            border: none;
+            border-top: 1px black solid;
+            text-align: left;
+            width:100%;
+        }
+        &:hover {
+            hr{
+                width: 0%;
+            }
+        }
+    }
+}
+// VIEW BLOG
+
 // EXPLORE DREAM
 .explore-dream{
+    display: flex;
+    justify-content:space-around;
+
+    margin-top: 100px;
     height: 100vh;
     background-image: url(../img/jipe.jpg);
+    background-size: cover;
+
+    p{
+        margin-top: -10%;
+        font-weight: 600;
+        font-size: 50pt;
+        align-self: center;
+    }
+    button {
+        border: none;
+        font-size: 20pt;
+        padding: 15px;
+        height: 60px;
+
+        margin-top: 20px;
+        color: white;
+        background-color: #1b1b1b;
+        border: 2px solid #1b1b1b;
+        transition: .5s;
+        cursor: pointer;
+        align-self: flex-end;
+        margin-bottom: 10%;
+        
+    }
+    button:hover {
+        color: #1b1b1b;
+        background: none;
+        border: 2px solid #1b1b1b;
+    }
 }
 // EXPLORE DREAM
 
