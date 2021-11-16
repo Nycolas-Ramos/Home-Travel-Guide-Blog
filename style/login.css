@@ -5,16 +5,65 @@
 }
 
 body {
+  overflow: hidden;
   background-image: url("../img/jipe.jpg");
   background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
-  margin: auto auto;
-  width: 50%;
-  background-color: white;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+  background-color: rgba(10, 0, 0, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+fieldset {
+  border: none;
+  color: white;
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
+}
+
+input {
+  padding-left: 10px;
+  font-size: 12pt;
+  color: #1b1b1b;
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(10, 1, 1, 0.2);
+}
+input:focus {
+  border: 1px solid rgba(10, 1, 1, 0.2);
+}
+input:hover {
+  border: 1px solid rgba(10, 1, 1, 0.2);
+}
+input + input {
+  margin-top: 10px;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=login.css.map */
