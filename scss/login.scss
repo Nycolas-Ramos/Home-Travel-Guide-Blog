@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image:url('../img/jipe.jpg') ;
+  background-size: cover;
+}
+
+form{
+  margin: auto auto;
+  width: 50%;
+  background-color:white;
+
+  display: flex;
+  flex-direction: column;
+  
+}
