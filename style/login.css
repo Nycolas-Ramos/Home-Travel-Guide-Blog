@@ -28,10 +28,20 @@ form {
   justify-content: space-between;
 }
 
+i {
+  animation-name: desl;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  margin-top: -80px;
+  font-size: 80pt;
+  color: white;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
 fieldset {
+  margin-top: -30px;
   border: none;
   color: white;
-  padding-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20pt;
 }
@@ -47,6 +57,7 @@ input {
   outline: none;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(10, 1, 1, 0.2);
+  margin-top: 10px;
 }
 input:focus {
   border: 1px solid rgba(10, 1, 1, 0.2);
@@ -54,16 +65,34 @@ input:focus {
 input:hover {
   border: 1px solid rgba(10, 1, 1, 0.2);
 }
-input + input {
-  margin-top: 10px;
-}
 
 button {
   border-radius: 5px;
+  font-size: 12pt;
+  color: #1b1b1ba4;
   border: none;
   height: 40px;
   width: 100px;
   cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: all 0.3s;
+}
+button:hover {
+  background-color: rgba(10, 0, 0, 0.3);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@keyframes desl {
+  0% {
+    margin-left: -20px;
+  }
+  50% {
+    margin-left: 20px;
+  }
+  100% {
+    margin-left: -20px;
+  }
 }
 
 /*# sourceMappingURL=login.css.map */
