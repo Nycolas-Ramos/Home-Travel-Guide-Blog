@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    color: black;
+    color: #1b1b1b;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -319,6 +319,87 @@ header.hide{
     }
 }
 // VIEW BLOG
+
+//  MORE TIPS
+.more-tips{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px;
+    height: 100vh;
+
+    .text-group{
+        display:flex;
+        flex-direction: column;
+        width: 45%;
+
+        .text{
+            font-size:17pt;
+            font-weight: 600;
+            color: #1b1b1bde;
+            margin-bottom: 15px;
+        }
+        .description{
+            font-size:12pt;
+            font-weight:400;
+            color:#1b1b1bcc;
+        }
+        hr{
+            border: none;
+            border-top: 1px solid #1b1b1b36;
+            margin: 40px 0 ;
+        }
+    }
+    .question-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        padding: 0 5%;
+
+        text-align:left ;
+        width: 45%;
+        height: 95%;
+        background-image: url("../img/praia-mt.jpg");
+        background-position: center;
+        background-size: cover;
+
+        .title{
+            font-size:40pt;
+            font-weight:600;
+            margin: 10px 0;
+        }
+        .description{
+            font-size:15pt;
+            margin:10px 0;
+        }
+        form{
+            display:flex;
+            flex-direction: row;
+
+            input{
+                border: none;
+                border-bottom: 1px solid #fff;
+                background: none;
+                font-size:12pt;
+                color: white;
+                &:focus{
+                    outline:none;
+                }
+                &::placeholder{
+                    color: rgba(255, 255, 255, 0.8);
+                }
+            }
+            button{
+                background: none;
+                border: white 1px solid;
+                color: white;
+                font-size: 12pt;
+                padding: 15px;
+                width: 150px;
+            }
+        }
+    }
+}
+//  MORE TIPS
 
 // EXPLORE DREAM
 .explore-dream{

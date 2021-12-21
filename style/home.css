@@ -6,7 +6,7 @@
 }
 
 body {
-  color: black;
+  color: #1b1b1b;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -298,6 +298,80 @@ header.hide {
 }
 .view-blog .link:hover hr {
   width: 0%;
+}
+
+.more-tips {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 20px;
+  height: 100vh;
+}
+.more-tips .text-group {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.more-tips .text-group .text {
+  font-size: 17pt;
+  font-weight: 600;
+  color: #1b1b1bde;
+  margin-bottom: 15px;
+}
+.more-tips .text-group .description {
+  font-size: 12pt;
+  font-weight: 400;
+  color: #1b1b1bcc;
+}
+.more-tips .text-group hr {
+  border: none;
+  border-top: 1px solid #1b1b1b36;
+  margin: 40px 0;
+}
+.more-tips .question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  text-align: left;
+  width: 45%;
+  height: 95%;
+  background-image: url("../img/praia-mt.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.more-tips .question-container .title {
+  font-size: 40pt;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.more-tips .question-container .description {
+  font-size: 15pt;
+  margin: 10px 0;
+}
+.more-tips .question-container form {
+  display: flex;
+  flex-direction: row;
+}
+.more-tips .question-container form input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: none;
+  font-size: 12pt;
+  color: white;
+}
+.more-tips .question-container form input:focus {
+  outline: none;
+}
+.more-tips .question-container form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.more-tips .question-container form button {
+  background: none;
+  border: white 1px solid;
+  color: white;
+  font-size: 12pt;
+  padding: 15px;
+  width: 150px;
 }
 
 .explore-dream {
